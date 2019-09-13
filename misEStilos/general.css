@@ -4,15 +4,6 @@ body {
     background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
 }
 
-#map {
-    width: 100%;
-    height: 70vh;
-}
-
-.estasAqui {
-    color: rgb(6, 147, 228)
-}
-
 nav.navbar {
     background-color: #F97B1B;
 }
@@ -20,4 +11,10 @@ nav.navbar {
 .navbar-brand {
     font-family: 'Pacifico', cursive;
     font-size: large;
+}
+
+footer{
+    background: rgba(6, 9, 44, 0.808);
+    height: 70px;
+    margin-top: 20px;
 }
