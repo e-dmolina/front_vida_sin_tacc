@@ -1,3 +1,37 @@
-.card{
-    background-color: rgba(239, 239, 245, 0.7);
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/Grupo\ 1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.titulos{
+    margin-top: 150px;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.titulos h2{
+    font-size: 70px;
+}
+
+.imagen2{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/slide2.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
 }

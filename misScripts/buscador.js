@@ -54,12 +54,14 @@ document.getElementById("btnMiUbicacion").addEventListener('click', (e) =>{
 
 //Obtengo todos los establecimientos
 getEstablecimientos = async () => {
-    const url = 'http://localhost:5000/api/establecimientos';
-    // const url = 'http://localhost:53594/api/Establecimientos';
+    const url = 'http://localhost:5001/api/establecimientos';
+    // const url = 'http://localhost:59096/api/Establecimientos';
     const response = await fetch(url);
     const jsonResponse = await response.json();
     obtenerMarcadores(jsonResponse);
     tabla(jsonResponse);
+    console.log(response)
+    console.log(jsonResponse)
 }
 
 const obtenerMarcadores = (datos) => {
@@ -79,10 +81,11 @@ document.getElementById("btnFiltrar").addEventListener('click', async (e) => {
     const rubro = document.getElementById("selectRubro").value;
 
     if (rubro == 'Todos') {
-         url = 'http://localhost:5000/api/establecimientos';
-        // url = 'http://localhost:53594/api/Establecimientos';
+         url = 'http://localhost:5001/api/establecimientos';
+        // url = 'http://localhost:59096/api/Establecimientos';
     } else {
-        url = 'http://localhost:5000/api/establecimientos/filtrar/' + rubro;
+        url = 'http://localhost:5001/api/establecimientos/filtrar/' + rubro;
+        // url = 'http://localhost:59096/Api/Establecimientos/?rubro=' + rubro;
     }
         
     const response = await fetch(url);
